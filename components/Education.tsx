@@ -1,17 +1,17 @@
-import { experience } from "@/data/portfolio";
+import { education } from "@/data/portfolio";
 
-export default function Experience() {
+export default function Education() {
   return (
     <section
-      id="experience"
+      id="education"
       className="scroll-mt-20 max-w-6xl mx-auto px-6 py-24"
     >
       <h2 className="font-display text-3xl md:text-4xl font-bold">
-        Experience
+        Education
       </h2>
       <hr className="mt-4 border-border" />
       <ol className="mt-10 divide-y divide-border">
-        {experience.map((entry) => (
+        {education.map((entry) => (
           <li
             key={`${entry.date}-${entry.role}`}
             className="grid md:grid-cols-[160px_1fr] gap-4 py-6"
