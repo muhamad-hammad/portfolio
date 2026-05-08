@@ -4,7 +4,7 @@ const links = [
   { href: "#hero", label: "Home" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
+  { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -13,7 +13,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 bg-surface/80 backdrop-blur border-b border-border">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#hero" className="focus-ring rounded font-display font-bold text-xl">
-          HB
+          MH
         </a>
         <nav className="hidden md:flex gap-6">
           {links.map((link) => (
