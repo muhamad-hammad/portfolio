@@ -11,7 +11,7 @@ export default function Contact() {
           Let&apos;s build something.
         </h2>
         <p className="mt-4 text-muted max-w-xl">
-          Open to AI/ML internships, game-dev collaborations, and interesting
+          Open to AI/ML internships, Agentic AI/ GenAI roles, and interesting
           side projects. Drop a line — I read every email.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
