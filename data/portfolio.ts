@@ -25,7 +25,7 @@ export const projects: Project[] = [
 {
   title: "AutoInsights: Automated EDA Platform",
   description:
-    "Full-stack AutoML platform that profiles a raw CSV in a single streaming pass and recommends ranked TensorFlow model architectures. Pandas used only for schema sniffing (nrows=0); all downstream stats run via tf.data, tf.linalg, and tf.math (Welford, HLL, Pearson). Streaming FastAPI backend with SSE (5-stage pipeline), Next.js 14 App Router frontend with Recharts visualizations. LLM provider is runtime-switchable between OpenAI and Anthropic.",
+    "AutoML platform that profiles a raw CSV and recommends ranked TensorFlow model architectures. Streaming FastAPI backend with SSE, Next.js 14 frontend with Recharts, and runtime-switchable LLM providers.",
   tags: ["Next.js 14", "FastAPI", "TensorFlow 2.18", "Pydantic v2", "Recharts", "OpenAI API", "Anthropic API", "Playwright"],
   githubUrl: "https://github.com/muhamad-hammad/AutoInsight",
   liveUrl: null,
@@ -35,7 +35,7 @@ export const projects: Project[] = [
 {
   title: "ResearchAssistantRAG: Academic Paper Q&A Platform",
   description:
-    "LangGraph-based RAG platform for academic research. Supports three modes — chat (Q&A), explain (structured breakdown), and visualize (data diagrams) — routed through a state machine graph. FastAPI backend with SQLAlchemy, FAISS vector store, sentence-transformers for embeddings, and PyMuPDF for PDF ingestion. JavaScript/CSS frontend, fully Dockerized with Redis/Celery for async tasks. Migrated from Grok to Gemini API; also supports local Ollama setup.",
+    "LangGraph RAG platform for academic papers with three modes: chat, explain, and visualize. FastAPI backend with FAISS vector store, sentence-transformers, and Dockerized async task queue.",
   tags: ["FastAPI", "LangGraph", "LangChain", "FAISS", "Gemini API", "Ollama", "Docker", "Redis", "PostgreSQL"],
   githubUrl: "https://github.com/muhamad-hammad/ResearchAssistantRAG",
   liveUrl: null,
@@ -45,7 +45,7 @@ export const projects: Project[] = [
 {
   title: "Sportics Event Manager",
   description:
-    "Full-stack sports event management system built as a DBMS course project for managing gaming leagues at FAST NUCES Karachi. Features role-based authentication (Admin, Captain, Player), a LOG draft/player-registration module, Olympiad bracket management, court booking with price calculation, match scheduling, and leaderboards. Django REST Framework backend with JWT auth, Next.js 16 App Router frontend.",
+    "Sports event management system for FAST NUCES gaming leagues. Role-based auth, draft registration, bracket management, court booking, and leaderboards.",
   tags: ["Next.js 16", "Django REST Framework", "JWT", "MySQL", "SQLite", "TypeScript", "TailwindCSS 4"],
   githubUrl: "https://github.com/muhamad-hammad/SporticsEventMAnager",
   liveUrl: null,
@@ -57,7 +57,7 @@ export const projects: Project[] = [
 {
   title: "Minesweeper AutoSolve",
   description:
-    "Interactive Minesweeper game with a built-in two-phase AI solver. Phase 1 applies constraint propagation to derive certain safe/mine moves via subset reduction; Phase 2 falls back to CSP enumeration, choosing the lowest-probability mine cell. Features a real-time AI debug panel (phase, constraints, confidence, move history), adjustable step speed, and step-by-step inspection mode. Board generates after first click to guarantee a safe start.",
+    "Minesweeper with a two-phase AI solver: constraint propagation for certain moves, CSP enumeration as fallback. Includes a real-time debug panel showing phase, confidence, and move history.",
   tags: ["Next.js 14", "React 18", "TypeScript", "Framer Motion", "Tailwind CSS", "Jest"],
   githubUrl: "https://github.com/muhamad-hammad/Minesweeper-AutoSolve-",
   liveUrl: null,
@@ -67,7 +67,7 @@ export const projects: Project[] = [
 {
   title: "Packet Routing with Reinforcement Learning",
   description:
-    "Interactive Streamlit GUI demonstrating Deep Q-Network (DQN) packet routing on dynamic network topologies. Supports two architectures: Multi-Agent (per-router agents with individual forwarding tables) and Universal (single centralized agent). Compares RL agent performance against Dijkstra's shortest-path algorithm with side-by-side path visualization and live training metrics. Uses TensorFlow (CPU) and NetworkX.",
+    "Streamlit GUI comparing DQN-based packet routing (multi-agent and single-agent) against Dijkstra's algorithm, with live training metrics and path visualization.",
   tags: ["Python", "TensorFlow", "Streamlit", "NetworkX", "Reinforcement Learning", "DQN"],
   githubUrl: "https://github.com/muhamad-hammad/PacketRoutingWithReinforcementLearning",
   liveUrl: null,
@@ -79,7 +79,7 @@ export const projects: Project[] = [
 {
   title: "NumScript Mini Compiler",
   description:
-    "Single-file compiler (~660 lines) for NumScript, a statically-typed language with variables, arithmetic, control flow, and functions. Full pipeline: Regex Lexer → Recursive-descent Parser → AST → Semantic Analyzer (type checking, symbol tables) → IR Generator (Three-Address Code) → Optimizer (constant folding, dead code elimination) → Bytecode Generator → Stack-based VM. Built in Python with no external dependencies as a Compiler Construction course project.",
+    "Single-file compiler for a statically-typed language. Full pipeline: Lexer, recursive-descent Parser, AST, Semantic Analyzer, IR Generator, Optimizer, Bytecode Generator, and Stack VM.",
   tags: ["Python", "Compiler Design", "AST", "Bytecode VM", "Three-Address Code"],
   githubUrl: "https://github.com/muhamad-hammad/NumScript",
   liveUrl: null,
@@ -91,7 +91,7 @@ export const projects: Project[] = [
 {
   title: "Spam Detector App",
   description:
-    "Interactive spam detection web app built with Streamlit and a trained Multinomial Naive Bayes classifier. Includes full NLP preprocessing pipeline (tokenization, stopword removal, stemming via NLTK) and displays spam/not-spam classification with a history of the last 5 checks.",
+    "Streamlit app with a Naive Bayes classifier and NLP preprocessing pipeline (tokenization, stopword removal, stemming) plus a history of the last 5 checks.",
   tags: ["Python", "Streamlit", "Scikit-learn", "NLTK", "Naive Bayes"],
   githubUrl: "https://github.com/muhamad-hammad/Spaaaaaam",
   liveUrl: null,
@@ -101,7 +101,7 @@ export const projects: Project[] = [
 {
   title: "Book Recommendation System",
   description:
-    "Personalized book recommendation app using a KNN-based collaborative filtering model. Users select a book from a dropdown and receive similar recommendations with cover images and clickable Google search links. Built with Scikit-learn, Pandas, and a Streamlit interface; model and pivot table serialized with Pickle.",
+    "KNN-based collaborative filtering app. Select a book and get similar recommendations with cover images and Google search links. Model serialized with Pickle.",
   tags: ["Python", "Streamlit", "Scikit-learn", "KNN", "Pandas", "Collaborative Filtering"],
   githubUrl: "https://github.com/muhamad-hammad/BookRecomendationSystem",
   liveUrl: null,
@@ -111,7 +111,7 @@ export const projects: Project[] = [
 {
   title: "Customer Churn Rate Predictor",
   description:
-    "ANN-based customer churn prediction model trained on the Churn Modelling dataset. Built in a Jupyter notebook using TensorFlow/Keras for the neural network architecture.",
+    "ANN-based churn prediction model built with TensorFlow/Keras on the Churn Modelling dataset.",
   tags: ["Python", "TensorFlow", "Keras", "Jupyter Notebook", "ANN"],
   githubUrl: "https://github.com/muhamad-hammad/chrurnRatePredictor",
   liveUrl: null,
@@ -121,7 +121,7 @@ export const projects: Project[] = [
 {
   title: "Indians Diabetes Predictor",
   description:
-    "Multi-model classification experiment on the Pima Indians Diabetes dataset using Optuna for hyperparameter tuning. Trained and compared RandomForestClassifier, GradientBoostingClassifier, KNeighborsClassifier, SVC, GaussianNB, and DecisionTreeClassifier; best result was ~79% accuracy with a tuned Decision Tree.",
+    "Multi-model classification experiment on the Pima Indians Diabetes dataset with Optuna hyperparameter tuning. Best result: ~79% accuracy with a tuned Decision Tree.",
   tags: ["Python", "Scikit-learn", "Optuna", "Jupyter Notebook", "Hyperparameter Tuning"],
   githubUrl: "https://github.com/muhamad-hammad/IndiansDiabetesPredictor",
   liveUrl: null,
@@ -131,7 +131,7 @@ export const projects: Project[] = [
 {
   title: "Personality Predictor (Introvert vs Extrovert)",
   description:
-    "Kaggle competition entry (Playground Series S5E7) to classify introverts vs extroverts. Used RandomForestClassifier and GradientBoostingClassifier with GridSearchCV tuning, achieving ~97% accuracy.",
+    "Kaggle competition entry (Playground Series S5E7) using Random Forest and Gradient Boosting with GridSearchCV, achieving ~97% accuracy.",
   tags: ["Python", "Scikit-learn", "Random Forest", "Gradient Boosting", "Jupyter Notebook", "Kaggle"],
   githubUrl: "https://github.com/muhamad-hammad/PersonalityPredictor",
   liveUrl: null,
@@ -141,7 +141,7 @@ export const projects: Project[] = [
 {
   title: "ProBattle: Driving Scene Classification",
   description:
-    "Kaggle competition entry for multi-label classification of urban driving images. Predicts three attributes per image — Scene Type, Time of Day, and Weather Condition — evaluated via averaged F1 score. Uses provided 2048-dim feature embeddings alongside raw images.",
+    "Kaggle competition entry for multi-label classification of urban driving images, predicting scene type, time of day, and weather condition via averaged F1 score.",
   tags: ["Python", "Jupyter Notebook", "Computer Vision", "Multi-label Classification", "Kaggle"],
   githubUrl: "https://github.com/muhamad-hammad/probattle",
   liveUrl: null,
@@ -153,7 +153,7 @@ export const projects: Project[] = [
 {
   title: "DSA Labs",
   description:
-    "C++ lab assignments covering core data structures and algorithms across 12 labs, including linked lists, trees, heaps, graphs (adjacency matrix & list), BFS/DFS, binary search trees, and more. Also includes mid-exam practice and a hackathon entry.",
+    "C++ lab assignments covering linked lists, trees, heaps, graphs, BFS/DFS, BSTs, and more across 12 labs.",
   tags: ["C++", "Data Structures", "Algorithms", "Graphs", "BST"],
   githubUrl: "https://github.com/muhamad-hammad/DSA_LABS",
   liveUrl: null,
@@ -163,7 +163,7 @@ export const projects: Project[] = [
 {
   title: "COAL Lab (Assembly)",
   description:
-    "Collection of x86 Assembly (MASM/NASM) lab assignments from the Computer Organization and Assembly Language course, covering 12 labs and a course project.",
+    "x86 Assembly (MASM/NASM) lab assignments from the Computer Organization and Assembly Language course across 12 labs.",
   tags: ["Assembly", "x86", "COAL", "Low-level Programming"],
   githubUrl: "https://github.com/muhamad-hammad/COAL-LAB",
   liveUrl: null,
@@ -173,7 +173,7 @@ export const projects: Project[] = [
 {
   title: "Flutter Todo App",
   description:
-    "First Flutter mobile application — a simple todo list app built while learning Flutter/Dart.",
+    "Simple todo list app built while learning Flutter/Dart.",
   tags: ["Flutter", "Dart", "Mobile"],
   githubUrl: "https://github.com/muhamad-hammad/flutter_todo_app",
   liveUrl: null,
@@ -183,7 +183,7 @@ export const projects: Project[] = [
 {
   title: "Flutter E-Commerce App",
   description:
-    "Flutter e-commerce mobile app built as a practice project while learning Flutter/Dart.",
+    "Flutter e-commerce app built as a practice project while learning Flutter/Dart.",
   tags: ["Flutter", "Dart", "Mobile", "E-Commerce"],
   githubUrl: "https://github.com/muhamad-hammad/flutter_ecommerce_app",
   liveUrl: null,
