@@ -9,16 +9,16 @@ export function Skills() {
       <h2 className="font-display text-3xl md:text-4xl font-bold">Skills</h2>
       <hr className="mt-4 border-border" />
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 divide-y divide-border">
         {skills.map((group) => (
           <div
             key={group.group}
-            className="bg-surface border border-border rounded-lg p-6"
+            className="grid md:grid-cols-[200px_1fr] gap-4 py-4 items-baseline"
           >
-            <h3 className="font-display text-xl font-semibold">
+            <h3 className="font-display text-base font-semibold text-muted">
               {group.group}
             </h3>
-            <ul className="mt-4 flex flex-wrap gap-2">
+            <ul className="flex flex-wrap gap-2">
               {group.items.map((item) => (
                 <li
                   key={item}
