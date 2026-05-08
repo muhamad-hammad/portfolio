@@ -1,7 +1,9 @@
-import { projects } from "@/data/portfolio";
+import { projects as curated } from "@/data/portfolio";
 import ProjectCard from "./ProjectCard";
 
-export default function Projects() {
+export default async function Projects() {
+  const all = curated;
+
   return (
     <section
       id="projects"
@@ -10,9 +12,9 @@ export default function Projects() {
       <h2 className="font-display text-3xl md:text-4xl font-bold">Projects</h2>
       <hr className="mt-4 border-border" />
       <div className="mt-10 grid gap-6 md:grid-cols-2">
-        {projects.map((project) => (
+        {all.map((project) => (
           <div
-            key={project.title}
+            key={project.githubUrl}
             className={project.featured ? "md:col-span-2" : ""}
           >
             <ProjectCard project={project} />
