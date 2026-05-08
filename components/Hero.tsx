@@ -19,7 +19,7 @@ export function Hero() {
               href={hero.cvUrl}
               className="focus-ring bg-accent text-black px-5 py-2.5 rounded-md font-medium hover:opacity-90"
             >
-              Download CV
+              Download Resume
             </a>
             <a
               href={hero.github}
