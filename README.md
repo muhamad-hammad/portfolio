@@ -34,3 +34,28 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Updating content
+
+Continuous deployment is wired up: every push to `main` triggers a Vercel build, live in roughly 30 seconds.
+
+```bash
+# update content (edit data/portfolio.ts, drop a new public/cv.pdf, etc.)
+git add .
+git commit -m "describe change"
+git push
+# Vercel auto-deploys in ~30 seconds
+```
+
+Common edits:
+
+- **Projects, skills, experience, hero copy** — edit [`data/portfolio.ts`](data/portfolio.ts).
+- **CV** — replace [`public/cv.pdf`](public/cv.pdf) with the new file (keep the same filename).
+- **OG image** — replace [`public/og.png`](public/og.png) (1200×630).
+
+## Custom domain (optional)
+
+1. Open the project in the [Vercel dashboard](https://vercel.com/dashboard).
+2. **Settings → Domains → Add**, enter your domain.
+3. Follow the DNS instructions Vercel shows for your registrar (typically an `A` record for the apex and a `CNAME` for `www`).
+4. Vercel issues the TLS certificate automatically once DNS propagates.
