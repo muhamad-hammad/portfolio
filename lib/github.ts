@@ -54,6 +54,7 @@ export async function getPublicRepos(): Promise<Project[]> {
         githubUrl: r.html_url,
         liveUrl: r.homepage && r.homepage.trim() !== "" ? r.homepage : null,
         featured: false,
+        domain: "",
       };
     });
 }
