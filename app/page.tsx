@@ -18,7 +18,7 @@ export default function Home() {
         <Contact />
       </main>
       <footer className="border-t border-border">
-        <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col gap-2 sm:flex-row sm:justify-between text-sm text-muted font-mono">
+        <div className="section-container py-6 sm:py-8 flex flex-col gap-2 sm:flex-row sm:justify-between text-xs sm:text-sm text-muted font-mono">
           <span>© {new Date().getFullYear()} {hero.name}</span>
           <span>Built with Next.js · Deployed on Vercel</span>
         </div>
