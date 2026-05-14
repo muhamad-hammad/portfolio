@@ -99,7 +99,7 @@ export const projects: Project[] = [
       "A software engineering coursework project architecting a multi-agent debate system with UML/system diagrams and a FastAPI backend. Features an OpenAI-powered agent route, LangGraph/LangChain integration for future orchestration, and a Next.js 15 + TypeScript frontend.",
     tags: ["FastAPI", "Next.js 15", "TypeScript", "LangGraph", "LangChain", "OpenAI API", "Pydantic", "Python"],
     githubUrl: "https://github.com/muhamad-hammad/ArguMind",
-    liveUrl: null,
+    liveUrl: "https://argumind.vercel.app",
     featured: false,
     domain: "AI & GenAI",
   },
