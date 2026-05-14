@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { hero } from "@/data/portfolio";
 
 export function Hero() {
@@ -35,6 +36,23 @@ export function Hero() {
         </div>
 
         <div className="flex flex-col gap-4">
+          <div className="flex justify-center md:justify-start">
+            <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-surface border-2 border-border overflow-hidden flex items-center justify-center flex-shrink-0">
+              {hero.avatarUrl ? (
+                <Image
+                  src={hero.avatarUrl}
+                  alt={hero.name}
+                  fill
+                  className="object-cover"
+                />
+              ) : (
+                <span className="font-display text-3xl sm:text-4xl font-bold text-muted select-none">
+                  MH
+                </span>
+              )}
+            </div>
+          </div>
+
           <div className="bg-surface border border-border rounded-lg p-4 sm:p-5">
             <div className="font-mono text-[11px] sm:text-xs text-muted tracking-widest uppercase">
               STATUS

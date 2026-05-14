@@ -8,6 +8,7 @@ export const hero = {
   github: "https://github.com/muhammad-hammad",
   linkedin: "https://linkedin.com/in/muhammad-hammad-b6b782296",
   email: "m.hammad.bhatti09@gmail.com",
+  avatarUrl: "" as string, // place your photo in /public and set the path e.g. "/avatar.jpg"
 } as const;
 
 export type Project = {
