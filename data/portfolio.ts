@@ -57,6 +57,17 @@ export const projects: Project[] = [
     domain: "Full-Stack",
   },
 
+  {
+    title: "LIGMA: Real-Time Collaborative Infinite Canvas",
+    description:
+      "A real-time collaborative infinite canvas with CRDT-based conflict-free sync via Yjs, node-level RBAC, AI-powered intent classification using Groq LLaMA, event sourcing with PostgreSQL, time-travel replay, and live cursor presence. Built with Next.js 16, React 19, Express/Bun, and Drizzle ORM.",
+    tags: ["Next.js 16", "React 19", "Tailwind CSS", "Yjs", "WebSocket", "Express", "Bun", "PostgreSQL", "Drizzle ORM", "Groq API", "CRDT", "RBAC"],
+    githubUrl: "https://github.com/muhamad-hammad/ligma",
+    liveUrl: "https://ligma-web.vercel.app",
+    featured: true,
+    domain: "Fullstack & Real-Time",
+  },
+
   // ─── AI / ALGORITHMS ─────────────────────────────────────────────────────────
 
   {
@@ -81,6 +92,28 @@ export const projects: Project[] = [
     domain: "AI & GenAI",
   },
 
+  {
+    title: "ArguMind: Multi-Agent Debate System",
+    description:
+      "A software engineering coursework project architecting a multi-agent debate system with UML/system diagrams and a FastAPI backend. Features an OpenAI-powered agent route, LangGraph/LangChain integration for future orchestration, and a Next.js 15 + TypeScript frontend.",
+    tags: ["FastAPI", "Next.js 15", "TypeScript", "LangGraph", "LangChain", "OpenAI API", "Pydantic", "Python"],
+    githubUrl: "https://github.com/muhamad-hammad/ArguMind",
+    liveUrl: null,
+    featured: false,
+    domain: "AI & GenAI",
+  },
+
+  {
+    title: "Negation-Lens: Negation-Aware Information Retrieval",
+    description:
+      "An IR research project evaluating how well retrieval models handle negation using the NevIR dataset. Benchmarks BM25, TF-IDF, Sentence-BERT, and MonoT5 3B cross-encoder across query accuracy, pairwise accuracy, and MRR, with rule-based negation type labeling (explicit, implicit, comparative).",
+    tags: ["Python", "NLP", "Information Retrieval", "BM25", "TF-IDF", "Sentence-BERT", "MonoT5", "Hugging Face", "NevIR Dataset"],
+    githubUrl: "https://github.com/muhamad-hammad/Negation-Lens",
+    liveUrl: null,
+    featured: false,
+    domain: "AI & NLP",
+  },
+
   // ─── COMPILERS / SYSTEMS ─────────────────────────────────────────────────────
 
   {
@@ -92,6 +125,28 @@ export const projects: Project[] = [
     liveUrl: null,
     featured: true,
     domain: "Systems & Algorithms",
+  },
+
+  {
+    title: "Thread Wars",
+    description:
+      "A multiplayer 2D survival game written in C using raylib where two players share a battery-powered gun, collect solar cells to charge up, and defend against zombie waves. Each player runs as a separate OS thread with mutex-based synchronization for thread-safe rendering.",
+    tags: ["C", "raylib", "Multithreading", "POSIX Threads", "Mutex", "Game Development"],
+    githubUrl: "https://github.com/muhamad-hammad/thread-wars",
+    liveUrl: null,
+    featured: false,
+    domain: "Systems & Game Development",
+  },
+
+  {
+    title: "eatFAST: University Campus Food Management System",
+    description:
+      "A terminal-based C++ food ordering and pickup management system for university campuses, allowing students and faculty to place orders or schedule pickups from on-campus shops. Built using object-oriented programming principles during the second semester.",
+    tags: ["C++", "OOP", "Terminal Application", "CLI", "Object-Oriented Design"],
+    githubUrl: "https://github.com/muhamad-hammad/eatFAST",
+    liveUrl: null,
+    featured: false,
+    domain: "Systems & CLI Tools",
   },
 
   // ─── ML / DATA SCIENCE ───────────────────────────────────────────────────────
