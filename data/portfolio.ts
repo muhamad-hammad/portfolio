@@ -3,6 +3,7 @@ export const hero = {
   tagline: "CS student building at the intersection of Agentic and Gen AI.",
   status: "Available for internships",
   currentProject: "RecSpo A music Recommender",
+  currentProjectUrl: "https://recspo-five.vercel.app",
   currentStack: "Next.js + FastAPI + SpotifyAPI",
   cvUrl: "/cv.pdf",
   github: "https://github.com/muhammad-hammad",

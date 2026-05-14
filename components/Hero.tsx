@@ -65,7 +65,18 @@ export function Hero() {
               CURRENTLY BUILDING
             </div>
             <div className="mt-2 font-display text-lg sm:text-xl">
-              {hero.currentProject}
+              {hero.currentProjectUrl ? (
+                <a
+                  href={hero.currentProjectUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-accent transition-colors"
+                >
+                  {hero.currentProject} ↗
+                </a>
+              ) : (
+                hero.currentProject
+              )}
             </div>
             <div className="mt-3 flex flex-wrap gap-2">
               {stackPills.map((pill) => (
