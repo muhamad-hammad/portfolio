@@ -66,7 +66,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/muhamad-hammad/ligma",
     liveUrl: "https://ligma-web.vercel.app",
     featured: true,
-    domain: "Fullstack & Real-Time",
+    domain: "AI & GenAI",
   },
 
   // ─── AI / ALGORITHMS ─────────────────────────────────────────────────────────
