@@ -55,7 +55,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/muhamad-hammad/SporticsEventMAnager",
     liveUrl: null,
     featured: false,
-    domain: "Full-Stack",
+    domain: "Full-Stack & GenAI",
   },
 
   {
@@ -66,7 +66,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/muhamad-hammad/ligma",
     liveUrl: "https://ligma-web.vercel.app",
     featured: true,
-    domain: "AI & GenAI",
+    domain: "Fullstack & GenAI",
   },
 
   // ─── AI / ALGORITHMS ─────────────────────────────────────────────────────────
