@@ -30,7 +30,7 @@ export const projects: Project[] = [
       "AutoML platform that profiles a raw CSV and recommends ranked TensorFlow model architectures. Streaming FastAPI backend with SSE, Next.js 14 frontend with Recharts, and runtime-switchable LLM providers.",
     tags: ["Next.js 14", "FastAPI", "TensorFlow 2.18", "Pydantic v2", "Recharts", "OpenAI API", "Anthropic API", "Playwright"],
     githubUrl: "https://github.com/muhamad-hammad/AutoInsight",
-    liveUrl: null,
+    liveUrl: "https://autoinsight-mh.vercel.app/",
     featured: true,
     domain: "AI & GenAI",
   },
