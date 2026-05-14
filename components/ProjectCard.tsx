@@ -20,20 +20,12 @@ export default function ProjectCard({ project }: { project: Project }) {
         ))}
       </ul>
       <div className="mt-auto pt-4 sm:pt-6 flex flex-wrap gap-3">
-        <a
-          href={project.githubUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="focus-ring border border-border bg-bg px-4 py-2 rounded-md text-sm hover:border-accent transition-colors"
-        >
-          GitHub →
-        </a>
-        {project.liveUrl !== null && (
+        {project.liveUrl && (
           <a
             href={project.liveUrl}
             target="_blank"
             rel="noreferrer"
-            className="focus-ring bg-accent text-black px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-opacity"
+            className="focus-ring border border-border bg-bg px-4 py-2 rounded-md text-sm hover:border-accent transition-colors"
           >
             Live →
           </a>

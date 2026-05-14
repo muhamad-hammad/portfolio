@@ -107,7 +107,7 @@ export default function Projects() {
 
               {/* Horizontal scrollable row */}
               <div
-                className="flex gap-4 overflow-x-auto pb-3 snap-x snap-mandatory scrollbar-thin scrollbar-track-transparent scrollbar-thumb-border"
+                className="flex gap-4 overflow-x-auto pb-3 snap-x snap-mandatory scrollbar-thin"
                 role="list"
               >
                 {visible.map((project) => (
