@@ -284,7 +284,7 @@ export type SkillGroup = {
 export const skills: SkillGroup[] = [
   {
     group: "Languages",
-    items: ["Python", "C", "C++", "SQL"],
+    items: ["Python", "C", "C++", "SQL", "Dart", "Flutter"],
   },
   {
     group: "Agentic AI / Gen AI",
@@ -331,7 +331,7 @@ export const skills: SkillGroup[] = [
   },
   {
     group: "Deep Learning",
-    items: ["TensorFlow", "Keras", "Neural Network Architectures", "Training Workflows"],
+    items: ["TensorFlow", "Keras", "Pytorch", "Neural Network Architectures", "Training Workflows"],
   },
   {
     group: "Reinforcement Learning",
@@ -374,27 +374,16 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    group: "Systems / Low-Level",
-    items: ["C++", "Assembly (x86)", "Compiler Design", "Bytecode VMs"],
-  },
-  {
-    group: "Mobile",
-    items: ["Flutter", "Dart"],
-  },
-  {
-    group: "Tools",
-    items: ["Git", "VS Code", "Jupyter Notebooks", "Streamlit"],
-  },
-  {
-    group: "CS Foundations",
+    group: "CS Foundational Courses",
     items: [
       "Data Structures",
       "Algorithms",
-      "OS",
+      "Operating Systems",
       "Computer Networks",
       "Automata",
       "Compiler Construction",
       "Databases",
+      "Information Retrieval",
     ],
   },
 ];
