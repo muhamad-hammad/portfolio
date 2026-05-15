@@ -6,6 +6,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 const links = [
   { href: "#hero", label: "Home" },
   { href: "#skills", label: "Skills" },
+  { href: "#live", label: "Live" },
   { href: "#projects", label: "Projects" },
   { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
@@ -33,12 +34,12 @@ export function Navbar() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 bg-surface/80 backdrop-blur border-b border-border">
+    <header className="sticky top-0 z-50 bg-bg/90 backdrop-blur border-b border-border">
       <div className="section-container h-14 sm:h-16 flex items-center justify-between">
         {/* Logo */}
         <a
           href="#hero"
-          className="focus-ring rounded font-display font-bold text-lg sm:text-xl"
+          className="focus-ring rounded font-display font-semibold text-lg sm:text-xl tracking-[-0.02em]"
         >
           MH
         </a>
