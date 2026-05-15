@@ -69,6 +69,17 @@ export const projects: Project[] = [
     domain: "Full-Stack & GenAI",
   },
 
+  {
+    title: "This Portfolio",
+    description:
+      "The site you're looking at — Next.js 16 statically exported and deployed on Netlify. Custom design system, Framer Motion animations, and a single typed data file as the source of truth for projects, skills, and education.",
+    tags: ["Next.js 16", "TypeScript", "Tailwind CSS 4", "Framer Motion", "Static Export", "Netlify"],
+    githubUrl: "https://github.com/muhamad-hammad/portfolio",
+    liveUrl: "https://muhammadhammad-fast.netlify.app/",
+    featured: false,
+    domain: "Full-Stack & GenAI",
+  },
+
   // ─── AI / ALGORITHMS ─────────────────────────────────────────────────────────
 
   {
