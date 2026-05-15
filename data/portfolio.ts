@@ -9,7 +9,7 @@ export const hero = {
   github: "https://github.com/muhammad-hammad",
   linkedin: "https://linkedin.com/in/muhammad-hammad-b6b782296",
   email: "m.hammad.bhatti09@gmail.com",
-  avatarUrl: "" as string, // place your photo in /public and set the path e.g. "/avatar.jpg"
+  avatarUrl: "/profile.jpeg" as string,
 } as const;
 
 export type Project = {
@@ -66,7 +66,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/muhamad-hammad/ligma",
     liveUrl: "https://ligma-web.vercel.app",
     featured: true,
-    domain: "Fullstack & GenAI",
+    domain: "Full-Stack & GenAI",
   },
 
   // ─── AI / ALGORITHMS ─────────────────────────────────────────────────────────
