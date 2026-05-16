@@ -35,18 +35,16 @@ export const projects: Project[] = [
     featured: true,
     domain: "AI & GenAI",
   },
-
   {
-    title: "ResearchAssistantRAG: Academic Paper Q&A Platform",
+    title: "ScholAR: Agentic RAG for Scientific Papers",
     description:
-      "LangGraph RAG platform for academic papers with three modes: chat, explain, and visualize. FastAPI backend with FAISS vector store, sentence-transformers, and Dockerized async task queue.",
-    tags: ["FastAPI", "LangGraph", "LangChain", "FAISS", "Gemini API", "Ollama", "Docker", "Redis", "PostgreSQL"],
-    githubUrl: "https://github.com/muhamad-hammad/ResearchAssistantRAG",
-    liveUrl: null,
+      "Agentic RAG platform for academic papers with two workflows: full-document summarization and targeted Q&A. FastAPI backend with LangGraph orchestration, ChromaDB vector store, and a Next.js 14 frontend deployed across Hugging Face Spaces and Vercel.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "FastAPI", "LangGraph", "LangChain", "ChromaDB", "fastembed", "Gemini API", "Groq", "Docker", "Hugging Face Spaces"],
+    githubUrl: "https://github.com/muhamad-hammad/ResearchPaperReaderRAG",
+    liveUrl: "https://ask-scholar.vercel.app/",
     featured: true,
     domain: "AI & GenAI",
   },
-
   {
     title: "Sportics Event Manager",
     description:
