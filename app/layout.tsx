@@ -14,9 +14,9 @@ const dmMono = DM_Mono({
   variable: "--font-dm-mono",
 });
 
-const title = "Hammad Bhatti — AI/ML & Game Dev";
+const title = "Hammad Bhatti — Agentic AI Engineer";
 const description =
-  "CS student building at the intersection of AI/ML and game dev. Portfolio of projects, skills, and experience.";
+  "CS student building agentic AI systems and ML applications. Portfolio of projects, skills, and experience.";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
