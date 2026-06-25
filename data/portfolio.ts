@@ -55,7 +55,26 @@ export const projects: Project[] = [
     featured: false,
     domain: "Full-Stack & GenAI",
   },
-
+  {
+    title: "LeadFlow AI",
+    description:
+      "Autonomous cold-outreach agent. A LangGraph pipeline researches each prospect, drafts a personalized email, and schedules it, while a decoupled outbox poller handles delivery, fully resumable from the database. Provider-agnostic LLM layer, dry-run-safe by default, with built-in compliance and an operator console.",
+    tags: ["Next.js", "FastAPI", "LangGraph", "Python", "Neon Postgres", "TypeScript", "Resend", "Docker"],
+    githubUrl: "https://github.com/muhamad-hammad/LeadFlowAI.git",
+    liveUrl: "https://leadflowai-mh.vercel.app",
+    featured: true,
+    domain: "Full-Stack & GenAI",
+  },
+  {
+    title: "AgentOps Monitor",
+    description:
+      "AI-powered observability platform that monitors APIs and databases, auto-detects anomalies, and runs an LLM agent to investigate incidents via RAG over runbooks — then alerts Slack. Real-time React dashboard with live metrics and incident timelines.",
+    tags: ["FastAPI", "Python", "LangGraph", "RAG", "FAISS", "PostgreSQL", "React", "Vite", "TailwindCSS", "Slack API", "JWT", "SSE"],
+    githubUrl: "https://github.com/muhamad-hammad/AgentOpsMonitor",
+    liveUrl: "https://agent-ops-monitor.vercel.app",
+    featured: true,
+    domain: "Full-Stack & GenAI",
+  },
   {
     title: "LIGMA: Real-Time Collaborative Infinite Canvas",
     description:
@@ -66,7 +85,6 @@ export const projects: Project[] = [
     featured: true,
     domain: "Full-Stack & GenAI",
   },
-
   {
     title: "This Portfolio",
     description:
