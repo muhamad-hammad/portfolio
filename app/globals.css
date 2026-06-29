@@ -61,11 +61,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Prevent horizontal overflow on mobile — scoped per-element, not globally */
-
-/* ── Global responsive helpers ──────────────────────────────────────────── */
-
-/* Fluid container padding: tighter on very small screens */
 .section-container {
   max-width: 72rem; /* 1152px = max-w-6xl */
   margin-left: auto;
@@ -74,7 +69,6 @@ body {
   padding-right: clamp(1rem, 4vw, 1.5rem);
 }
 
-/* Ensure all images and media are responsive */
 img, video, canvas, svg {
   max-width: 100%;
   height: auto;
@@ -88,7 +82,6 @@ img, video, canvas, svg {
   }
 }
 
-/* Fluid section vertical padding */
 .section-padding {
   padding-top: clamp(3rem, 8vw, 6rem);
   padding-bottom: clamp(3rem, 8vw, 6rem);
