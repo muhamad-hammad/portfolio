@@ -56,6 +56,16 @@ export const projects: Project[] = [
     domain: "Full-Stack & GenAI",
   },
   {
+    title: "RepoGraph",
+    description:
+      "Interactive static-analysis graph of your repository's code structure for VSCode. Parses Python and JavaScript/TypeScript via tree-sitter, rendering file → class → function nesting plus imports/calls edges in a Cytoscape webview. Drill-down navigation, search, source panel, and PNG/PDF export. No AI, no runtime instrumentation.",
+    tags: ["TypeScript", "VSCode Extension API", "web-tree-sitter", "Cytoscape.js", "cytoscape-fcose", "esbuild", "jsPDF"],
+    githubUrl: "https://github.com/muhamad-hammad/RepoGraph",
+    liveUrl: null,
+    featured: true,
+    domain: "VS Code Extensions",
+  },
+  {
     title: "LeadFlow AI",
     description:
       "Autonomous cold-outreach agent. A LangGraph pipeline researches each prospect, drafts a personalized email, and schedules it, while a decoupled outbox poller handles delivery, fully resumable from the database. Provider-agnostic LLM layer, dry-run-safe by default, with built-in compliance and an operator console.",
