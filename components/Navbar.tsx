@@ -15,7 +15,6 @@ const links = [
 export function Navbar() {
   const [open, setOpen] = useState(false);
 
-  // Close drawer on resize to desktop
   useEffect(() => {
     const mq = window.matchMedia("(min-width: 768px)");
     const handler = () => {
@@ -25,7 +24,6 @@ export function Navbar() {
     return () => mq.removeEventListener("change", handler);
   }, []);
 
-  // Prevent body scroll when drawer is open
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
@@ -36,7 +34,6 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-bg/90 backdrop-blur border-b border-border">
       <div className="section-container h-14 sm:h-16 flex items-center justify-between">
-        {/* Logo */}
         <a
           href="#hero"
           className="focus-ring rounded font-display font-semibold text-lg sm:text-xl tracking-[-0.02em]"
@@ -44,7 +41,6 @@ export function Navbar() {
           MH
         </a>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex gap-4 lg:gap-6">
           {links.map((link) => (
             <a
@@ -57,11 +53,9 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* Right side: theme toggle + hamburger */}
         <div className="flex items-center gap-2">
           <ThemeToggle />
 
-          {/* Mobile hamburger */}
           <button
             type="button"
             aria-label={open ? "Close menu" : "Open menu"}
@@ -69,7 +63,6 @@ export function Navbar() {
             className="md:hidden focus-ring h-10 w-10 rounded-md bg-surface border border-border hover:border-accent flex items-center justify-center transition-colors"
           >
             {open ? (
-              /* X icon */
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -85,7 +78,6 @@ export function Navbar() {
                 <path d="M6 6l12 12" />
               </svg>
             ) : (
-              /* Hamburger icon */
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -106,7 +98,6 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile drawer overlay */}
       {open && (
         <div
           className="fixed inset-0 top-14 z-40 bg-black/40 backdrop-blur-sm md:hidden"
@@ -114,7 +105,6 @@ export function Navbar() {
         />
       )}
 
-      {/* Mobile drawer */}
       <nav
         className={`
           fixed top-14 right-0 z-50 h-[calc(100dvh-3.5rem)] w-[min(16rem,80vw)]

@@ -13,7 +13,6 @@ export function Hero() {
       className="scroll-mt-14 sm:scroll-mt-16 section-container section-padding"
     >
       <div className="grid md:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
-        {/* LEFT SIDE */}
         <div>
           <h1 className="font-display text-[clamp(2rem,8vw,4.5rem)] font-semibold tracking-[-0.04em] leading-[1.05]">
             {hero.name}
@@ -42,9 +41,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
         <div className="flex flex-col gap-4">
-          {/* AVATAR */}
           <div className="flex justify-center md:justify-start">
             <div className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full bg-surface border border-border overflow-hidden flex items-center justify-center flex-shrink-0">
               {hero.avatarUrl && hero.avatarUrl.trim() !== "" ? (
@@ -63,7 +60,6 @@ export function Hero() {
             </div>
           </div>
 
-          {/* STATUS */}
           <div className="bg-surface border border-border rounded-lg p-4 sm:p-5">
             <div className="font-mono text-[11px] sm:text-xs text-muted tracking-[0.04em] uppercase">
               STATUS
@@ -74,7 +70,6 @@ export function Hero() {
             </div>
           </div>
 
-          {/* CURRENT PROJECT */}
           <div className="bg-surface border border-border rounded-lg p-4 sm:p-5">
             <div className="font-mono text-[11px] sm:text-xs text-muted tracking-[0.04em] uppercase">
               CURRENTLY BUILDING
