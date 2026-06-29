@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useRef } from "react";
+import { useState, useMemo } from "react";
 import { projects } from "@/data/portfolio";
 import ProjectCard from "./ProjectCard";
 
@@ -18,8 +18,6 @@ export default function Projects() {
   const [showAllDomains, setShowAllDomains] = useState<
     Record<string, boolean>
   >({});
-
-  const scrollRef = useRef<HTMLDivElement>(null);
 
   const filtered = useMemo(() => {
     if (activeDomain === "All") {
@@ -74,9 +72,7 @@ export default function Projects() {
 
       <hr className="mt-4 border-border" />
 
-      {/* FILTER TABS */}
       <div
-        ref={scrollRef}
         className="mt-6 flex gap-1.5 overflow-x-auto pb-1 scrollbar-hide"
         role="tablist"
         aria-label="Filter projects by domain"
@@ -107,7 +103,6 @@ export default function Projects() {
         ))}
       </div>
 
-      {/* PROJECT GROUPS */}
       <div className="mt-8 flex flex-col gap-10">
         {groups.map(({ label, items }) => {
           if (items.length === 0) {
@@ -136,7 +131,6 @@ export default function Projects() {
                 </h3>
               )}
 
-              {/* PROJECT CARDS */}
               <div
                 className="flex gap-4 overflow-x-auto pb-3 snap-x snap-mandatory scrollbar-thin"
                 role="list"
@@ -151,7 +145,6 @@ export default function Projects() {
                   </div>
                 ))}
 
-                {/* SHOW ALL CARD */}
                 {hasMore && !isExpanded && (
                   <div
                     role="listitem"
@@ -175,7 +168,6 @@ export default function Projects() {
                 )}
               </div>
 
-              {/* SHOW LESS BUTTON */}
               {hasMore && isExpanded && (
                 <button
                   type="button"
