@@ -49,15 +49,9 @@ export default function LiveProjects() {
               />
             </div>
             <div className="px-3 py-2.5 flex items-center justify-between gap-2">
-              <div className="flex items-center gap-2 min-w-0">
-                <h3 className="font-display text-sm font-semibold leading-tight tracking-[-0.02em] truncate">
-                  {project.title}
-                </h3>
-                <span className="flex-shrink-0 flex items-center gap-1 px-1.5 py-0.5 rounded-full border text-[10px] font-mono font-medium text-success border-success/30 bg-success/8">
-                  <span className="w-1 h-1 rounded-full bg-success" />
-                  live
-                </span>
-              </div>
+              <h3 className="font-display text-sm font-semibold leading-tight tracking-[-0.02em] truncate">
+                {project.title}
+              </h3>
               <span className="flex-shrink-0 text-xs font-mono text-muted group-hover:text-accent transition-colors">
                 Live ↗
               </span>
