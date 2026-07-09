@@ -6,7 +6,7 @@ export const hero = {
   currentProjectUrl: "https://recspo-five.vercel.app",
   currentStack: "Next.js + FastAPI + SpotifyAPI",
   cvUrl: "/cv.pdf",
-  github: "https://github.com/muhammad-hammad",
+  github: "https://github.com/muhamad-hammad",
   linkedin: "https://linkedin.com/in/muhammad-hammad-b6b782296",
   email: "m.hammad.bhatti09@gmail.com",
   avatarUrl: "/profile.jpeg" as string,
