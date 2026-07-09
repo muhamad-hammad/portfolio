@@ -40,7 +40,7 @@ export const projects: Project[] = [
     description:
       "Agentic RAG platform for academic papers with two workflows: full-document summarization and targeted Q&A. FastAPI backend with LangGraph orchestration, ChromaDB vector store, and a Next.js 14 frontend deployed across Hugging Face Spaces and Vercel.",
     tags: ["Next.js", "TypeScript", "Tailwind", "FastAPI", "LangGraph", "LangChain", "ChromaDB", "fastembed", "Gemini API", "Groq", "Docker", "Hugging Face Spaces"],
-    githubUrl: "https://github.com/muhamad-hammad/ResearchPaperReaderRAG",
+    githubUrl: "https://github.com/muhamad-hammad/ScholAR",
     liveUrl: "https://ask-scholar.vercel.app/",
     featured: true,
     domain: "AI & GenAI",
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     description:
       "Autonomous cold-outreach agent. A LangGraph pipeline researches each prospect, drafts a personalized email, and schedules it, while a decoupled outbox poller handles delivery, fully resumable from the database. Provider-agnostic LLM layer, dry-run-safe by default, with built-in compliance and an operator console.",
     tags: ["Next.js", "FastAPI", "LangGraph", "Python", "Neon Postgres", "TypeScript", "Resend", "Docker"],
-    githubUrl: "https://github.com/muhamad-hammad/LeadFlowAI.git",
+    githubUrl: "https://github.com/muhamad-hammad/LeadFlowAI",
     liveUrl: "https://leadflowai-mh.vercel.app",
     featured: true,
     domain: "Full-Stack & GenAI",

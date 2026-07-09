@@ -28,16 +28,14 @@ export default function ProjectCard({ project }: { project: Project }) {
         ))}
       </ul>
       <div className="mt-auto pt-4 sm:pt-6 flex flex-wrap gap-3">
-        {project.liveUrl && (
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="focus-ring border border-border bg-bg px-4 py-2 rounded-md text-sm hover:border-accent transition-colors"
-          >
-            Live ↗
-          </a>
-        )}
+        <a
+          href={project.liveUrl ?? project.githubUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="focus-ring border border-border bg-bg px-4 py-2 rounded-md text-sm hover:border-accent transition-colors"
+        >
+          {project.liveUrl ? "Live ↗" : "Code ↗"}
+        </a>
       </div>
     </article>
   );
